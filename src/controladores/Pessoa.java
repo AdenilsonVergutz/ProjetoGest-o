@@ -2,14 +2,12 @@ package controladores;
 
 import java.util.ArrayList;
 
-import javax.swing.ComboBoxEditor;
-import javax.swing.JComboBox;
-
 public class Pessoa {
 
 	// Atributos da minha classe
 	private String nomePessoa;
 	private String SobrenomePessoa;
+	private String NomeSala;
 
 	public static ArrayList<Pessoa> dados = new ArrayList<>();
 
@@ -28,6 +26,14 @@ public class Pessoa {
 	public void setSobrenomePessoa(String SobrenomePessoa) {
 		this.SobrenomePessoa = SobrenomePessoa;
 
+	}
+
+	public String getNomeSala() {
+		return NomeSala;
+	}
+
+	public void setNomeSala(String NomeSala) {
+		this.NomeSala = NomeSala;
 	}
 
 }

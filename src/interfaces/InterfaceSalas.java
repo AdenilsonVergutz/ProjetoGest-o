@@ -23,10 +23,10 @@ public class InterfaceSalas {
 		JFrame InterfaceSalas = new JFrame("GESTÃO VERGUTZ");
 
 		InterfaceSalas.setIconImage(Toolkit.getDefaultToolkit()
-				.getImage("P:\\Java Fundamentos\\06 - OO\\sistemaGestaoMercado\\src\\image\\icon_main.png"));
+				.getImage("D:\\Projeto\\ProjetoGestao\\ProjetoGestao\\src\\image\\icon_main.png"));
 		InterfaceSalas.getContentPane().setBackground(Color.GRAY);
 
-		URL caminhoDaImagem1 = InterfacePrincipal.class.getResource("/image/icon_pessoa.png");
+		URL caminhoDaImagem1 = InterfacePrincipal.class.getResource("/image/icon_person.png");
 
 		ImageIcon imagem1 = new ImageIcon(caminhoDaImagem1);
 
@@ -37,9 +37,9 @@ public class InterfaceSalas {
 		// JLabel
 		JLabel exibirImagem = new JLabel();
 		exibirImagem.setIcon(imagem);
-		exibirImagem.setBounds(-200, -285, 784, 626);
+		exibirImagem.setBounds(1, -35, 660, 480);
 
-		InterfaceSalas.setSize(600, 380);
+		InterfaceSalas.setSize(630, 430);
 		InterfaceSalas.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		InterfaceSalas.setLocationRelativeTo(null);
 		InterfaceSalas.getContentPane().setLayout(null);
@@ -112,9 +112,9 @@ public class InterfaceSalas {
 
 		InterfaceSalas.getContentPane().add(barraRolagem);
 
-		JLabel lblCadastreAltereOu = new JLabel("Cadastre, altere as Salas.");
-		lblCadastreAltereOu.setFont(new Font("SansSerif", Font.BOLD, 11));
-		lblCadastreAltereOu.setForeground(Color.DARK_GRAY);
+		JLabel lblCadastreAltereOu = new JLabel("Cadastre ou altere sua Sala!");
+		lblCadastreAltereOu.setFont(new Font("SansSerif", Font.BOLD, 14));
+		lblCadastreAltereOu.setForeground(Color.BLACK);
 		lblCadastreAltereOu.setBackground(Color.WHITE);
 		lblCadastreAltereOu.setBounds(183, 36, 350, 14);
 

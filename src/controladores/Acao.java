@@ -1,6 +1,5 @@
 package controladores;
 
-import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 
 public class Acao {
@@ -18,20 +17,19 @@ public class Acao {
 
     }
 
-    // Método para cadastro de Pessoa
     public void CadastrarPessoa(String NomePessoa, String SobrenomePessoa, String NomeSala) {
 
         // Criar objeto
         Pessoa c = new Pessoa();
         c.setNomePessoa(NomePessoa);
         c.setSobrenomePessoa(SobrenomePessoa);
+        c.setNomeSala(NomeSala);
 
         // Adicionar ao ArrayList
         Pessoa.dados.add(c);
 
     }
 
-    // Método para cadastro de Espaço
     public void CadastrarEspacos(String NomeEspaco, int LotacaoEspaco) {
 
         // Criar objeto
@@ -72,7 +70,7 @@ public class Acao {
 
         for (int indice = 0; indice < Pessoa.dados.size(); indice++) {
             modelo.addRow(new Object[] { Pessoa.dados.get(indice).getNomePessoa(),
-                    Pessoa.dados.get(indice).getSobrenomePessoa() });
+                    Pessoa.dados.get(indice).getSobrenomePessoa(), Pessoa.dados.get(indice).getNomeSala() });
         }
 
         // Retorno

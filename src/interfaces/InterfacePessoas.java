@@ -6,11 +6,9 @@ import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import interfaces.CadastrarPessoa;
 import controladores.Acao;
 import javax.swing.JLabel;
 import java.awt.Color;
@@ -24,7 +22,7 @@ public class InterfacePessoas {
 		JFrame InterfacePessoas = new JFrame("GESTÃO VERGUTZ");
 
 		InterfacePessoas.setIconImage(Toolkit.getDefaultToolkit()
-				.getImage("P:\\Java Fundamentos\\06 - OO\\sistemaGestaoMercado\\src\\image\\icon_main.png"));
+				.getImage("D:\\Projeto\\ProjetoGestao\\ProjetoGestao\\src\\image\\icon_main.png"));
 		InterfacePessoas.getContentPane().setBackground(Color.GRAY);
 
 		URL caminhoDaImagem1 = InterfacePrincipal.class.getResource("/image/icon_person.png");
@@ -38,9 +36,9 @@ public class InterfacePessoas {
 		// JLabel
 		JLabel exibirImagem = new JLabel();
 		exibirImagem.setIcon(imagem);
-		exibirImagem.setBounds(-200, -285, 784, 626);
+		exibirImagem.setBounds(1, -35, 660, 480);
 
-		InterfacePessoas.setSize(600, 380);
+		InterfacePessoas.setSize(630, 430);
 		InterfacePessoas.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		InterfacePessoas.setLocationRelativeTo(null);
 		InterfacePessoas.getContentPane().setLayout(null);
@@ -115,9 +113,9 @@ public class InterfacePessoas {
 
 		InterfacePessoas.getContentPane().add(exibirImagem1);
 
-		JLabel lblCadastreAltereOu = new JLabel("Cadastre, altere os itens da sua relação de Pessoas.");
-		lblCadastreAltereOu.setForeground(Color.DARK_GRAY);
-		lblCadastreAltereOu.setFont(new Font("SansSerif", Font.BOLD, 11));
+		JLabel lblCadastreAltereOu = new JLabel("Cadastro de Pessoa!");
+		lblCadastreAltereOu.setForeground(Color.BLACK);
+		lblCadastreAltereOu.setFont(new Font("SansSerif", Font.BOLD, 14));
 		lblCadastreAltereOu.setBackground(Color.WHITE);
 		lblCadastreAltereOu.setBounds(183, 36, 350, 14);
 		InterfacePessoas.getContentPane().add(lblCadastreAltereOu);

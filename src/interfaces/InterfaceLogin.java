@@ -21,9 +21,9 @@ public class InterfaceLogin {
 
 		JFrame InterfaceLogin = new JFrame("GESTÃO VERGUTZ");
 
-		InterfaceLogin.setIconImage(
-				Toolkit.getDefaultToolkit().getImage("E:\\VISUAL CODE\\ProjetoGestao\\image\\icon_main.png"));
-		InterfaceLogin.getContentPane().setBackground(Color.GRAY);
+		InterfaceLogin.setIconImage(Toolkit.getDefaultToolkit()
+				.getImage("D:\\Projeto\\ProjetoGestao\\ProjetoGestao\\bin\\image\\icon_main.png"));
+		InterfaceLogin.getContentPane().setBackground(Color.BLUE);
 
 		URL caminhoDaImagem1 = InterfacePrincipal.class.getResource("/image/icon_main.png");
 
@@ -36,27 +36,30 @@ public class InterfaceLogin {
 		// JLabel
 		JLabel exibirImagem = new JLabel();
 		exibirImagem.setIcon(imagem);
-		exibirImagem.setBounds(-430, -405, 795, 725);
+		exibirImagem.setBounds(-5, -200, 950, 800);
 
-		InterfaceLogin.setSize(380, 320);
+		InterfaceLogin.setSize(360, 420);
 		InterfaceLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		InterfaceLogin.setLocationRelativeTo(null);
 		InterfaceLogin.getContentPane().setLayout(null);
 
 		JLabel lblLogin = new JLabel("Usuario:");
+		lblLogin.setForeground(Color.BLACK);
 		lblLogin.setFont(new Font("SansSerif", Font.BOLD, 12));
-		lblLogin.setBounds(68, 140, 90, 20);
+		lblLogin.setBounds(42, 170, 90, 20);
 		JLabel lblSenha = new JLabel("Senha:");
+		lblSenha.setForeground(Color.BLACK);
 		lblSenha.setFont(new Font("SansSerif", Font.BOLD, 12));
-		lblSenha.setBounds(68, 165, 90, 20);
+		lblSenha.setBounds(42, 195, 90, 20);
 
 		JTextField txtLogin = new JTextField();
-		txtLogin.setBounds(122, 140, 150, 20);
+		txtLogin.setBounds(100, 170, 150, 20);
 		JTextField txtSenha = new JTextField();
-		txtSenha.setBounds(122, 165, 150, 20);
+		txtSenha.setBounds(100, 195, 150, 20);
 
 		JButton btnLogin = new JButton("Login");
-		btnLogin.setBounds(130, 210, 110, 40);
+		btnLogin.setForeground(Color.BLACK);
+		btnLogin.setBounds(115, 280, 110, 40);
 
 		// Adicionando ação ao botão do login
 		btnLogin.addActionListener(new ActionListener() {
@@ -92,21 +95,21 @@ public class InterfaceLogin {
 
 		JLabel lblBemVindoAo = new JLabel("Bem vindo!");
 		lblBemVindoAo.setForeground(Color.BLACK);
-		lblBemVindoAo.setFont(new Font("SansSerif", Font.BOLD, 13));
-		lblBemVindoAo.setBounds(155, 5, 145, 50);
+		lblBemVindoAo.setFont(new Font("SansSerif", Font.BOLD, 15));
+		lblBemVindoAo.setBounds(125, 5, 145, 50);
 		InterfaceLogin.getContentPane().add(lblBemVindoAo);
 		InterfaceLogin.getContentPane().add(exibirImagem);
 
 		JLabel lblSistemaDeGesto = new JLabel("Sistema de Gestão Vergutz.");
-		lblSistemaDeGesto.setForeground(Color.GRAY);
-		lblSistemaDeGesto.setFont(new Font("SansSerif", Font.PLAIN, 12));
-		lblSistemaDeGesto.setBounds(100, 35, 213, 100);
+		lblSistemaDeGesto.setForeground(Color.BLACK);
+		lblSistemaDeGesto.setFont(new Font("SansSerif", Font.BOLD, 13));
+		lblSistemaDeGesto.setBounds(80, 35, 213, 100);
 		InterfaceLogin.getContentPane().add(lblSistemaDeGesto);
 
 		JLabel lblFaaOLogin = new JLabel("Faça o login para utilizar o sistema.");
-		lblFaaOLogin.setForeground(Color.GRAY);
-		lblFaaOLogin.setFont(new Font("SansSerif", Font.PLAIN, 12));
-		lblFaaOLogin.setBounds(80, 100, 225, 25);
+		lblFaaOLogin.setForeground(Color.BLACK);
+		lblFaaOLogin.setFont(new Font("SansSerif", Font.BOLD, 12));
+		lblFaaOLogin.setBounds(67, 100, 225, 25);
 		InterfaceLogin.getContentPane().add(lblFaaOLogin);
 		InterfaceLogin.getContentPane().add(exibirImagem);
 

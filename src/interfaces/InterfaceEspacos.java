@@ -23,10 +23,10 @@ public class InterfaceEspacos {
 		JFrame InterfaceEspacos = new JFrame("GESTÃO  VERGUTZ");
 
 		InterfaceEspacos.setIconImage(Toolkit.getDefaultToolkit()
-				.getImage("P:\\Java Fundamentos\\06 - OO\\sistemaGestaoMercado\\src\\image\\icon_main.png"));
-		InterfaceEspacos.getContentPane().setBackground(Color.GRAY);
+				.getImage("D:\\Projeto\\ProjetoGestao\\ProjetoGestao\\src\\image\\icon_main.png"));
+		InterfaceEspacos.getContentPane().setBackground(Color.BLACK);
 
-		URL caminhoDaImagem1 = InterfacePrincipal.class.getResource("/image/icon_work.png");
+		URL caminhoDaImagem1 = InterfacePrincipal.class.getResource("/image/icon_person.png");
 
 		ImageIcon imagem1 = new ImageIcon(caminhoDaImagem1);
 
@@ -34,7 +34,7 @@ public class InterfaceEspacos {
 
 		ImageIcon imagem = new ImageIcon(caminhoDaImagem);
 
-		InterfaceEspacos.setSize(600, 380);
+		InterfaceEspacos.setSize(630, 430);
 		InterfaceEspacos.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		InterfaceEspacos.setLocationRelativeTo(null);
 		InterfaceEspacos.getContentPane().setLayout(null);
@@ -107,17 +107,17 @@ public class InterfaceEspacos {
 		exibirImagem1.setBounds(57, 21, 50, 50);
 		InterfaceEspacos.getContentPane().add(exibirImagem1);
 
-		JLabel label = new JLabel("Cadastre, altere ou exclua espaço.");
-		label.setForeground(Color.DARK_GRAY);
-		label.setFont(new Font("SansSerif", Font.BOLD, 11));
-		label.setBackground(Color.WHITE);
+		JLabel label = new JLabel("Cadastre ou altere seu espaço para café!");
+		label.setForeground(Color.BLACK);
+		label.setFont(new Font("SansSerif", Font.BOLD, 14));
+		label.setBackground(Color.BLACK);
 		label.setBounds(183, 36, 350, 14);
 		InterfaceEspacos.getContentPane().add(label);
 
 		// JLabel
 		JLabel exibirImagem = new JLabel();
 		exibirImagem.setIcon(imagem);
-		exibirImagem.setBounds(-200, -285, 784, 626);
+		exibirImagem.setBounds(1, -35, 660, 480);
 
 		InterfaceEspacos.getContentPane().add(exibirImagem);
 

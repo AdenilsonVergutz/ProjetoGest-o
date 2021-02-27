@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -15,10 +15,10 @@ public class CadastrarEspaco {
 
 	public CadastrarEspaco() {
 
-		JFrame CadastrarEspaco = new JFrame("GESTÃO VERGUTZ");
+		JDialog CadastrarEspaco = new JDialog();
 
 		CadastrarEspaco.setSize(350, 200);
-		CadastrarEspaco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		CadastrarEspaco.setModal(true);
 		CadastrarEspaco.setLocationRelativeTo(null);
 		CadastrarEspaco.setLayout(null);
 

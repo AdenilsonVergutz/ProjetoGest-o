@@ -33,6 +33,8 @@ public class AlterarPessoa {
 		txtNomePessoa.setBounds(140, 20, 150, 20);
 		JTextField txtSobrenomePessoa = new JTextField(String.valueOf(obterSobrenomePessoa));
 		txtSobrenomePessoa.setBounds(140, 40, 150, 20);
+		JComboBox lblNomeSalaComboBox = new JComboBox<>();
+		lblNomeSalaComboBox.setBounds(140, 60, 150, 20);
 
 		JButton btnConfirma = new JButton("Confirma");
 		btnConfirma.setBounds(70, 100, 90, 40);

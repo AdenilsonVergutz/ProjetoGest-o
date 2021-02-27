@@ -2,10 +2,8 @@ package interfaces;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
@@ -15,10 +13,10 @@ public class CadastrarSalas {
 
 	public CadastrarSalas() {
 
-		JFrame CadastrarSala = new JFrame("GESTÃO VERGUTZ");
+		JDialog CadastrarSala = new JDialog();
 
 		CadastrarSala.setSize(350, 200);
-		CadastrarSala.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		CadastrarSala.setModal(true);
 		CadastrarSala.setLocationRelativeTo(null);
 		CadastrarSala.setLayout(null);
 
