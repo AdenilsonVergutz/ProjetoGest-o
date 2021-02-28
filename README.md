@@ -5,17 +5,17 @@ a utilizar as salas e espaços.
 
 Foi utilizado a ferramenta Visual Studio Code para desenvolver o projeto em linguagem JAVA.
 
-#Requisitos para rodar o sistema.
+#Requisitos para rodar o sistema.#
 
 - Efetuado a instalação do Visual Studio Code 2019.
 - Configurado Java_Home nas variáveis do Sistema com o JDK 11.0 (Path).
 - Necessário instalar as seguintes extensões no VS Code:
-          - Debugger for Java 
-          - Java extension Pack
-          - Java IDE Pack
-          - Java Language Support
-          - Java properties
-          - Spring Initializr Java Support
+- - Debugger for Java 
+- - Java extension Pack
+- - Java IDE Pack
+- - Java Language Support
+- - Java properties
+- - Spring Initializr Java Support
 
 
 #Instruções para utilizar o sistema.
