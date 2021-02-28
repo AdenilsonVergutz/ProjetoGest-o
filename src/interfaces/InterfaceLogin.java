@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import java.awt.Color;
@@ -54,7 +55,7 @@ public class InterfaceLogin {
 
 		JTextField txtLogin = new JTextField();
 		txtLogin.setBounds(100, 170, 150, 20);
-		JTextField txtSenha = new JTextField();
+		JTextField txtSenha = new JPasswordField();
 		txtSenha.setBounds(100, 195, 150, 20);
 
 		JButton btnLogin = new JButton("Login");

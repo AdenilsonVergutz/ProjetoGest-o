@@ -42,7 +42,7 @@ public class Acao {
 
     }
 
-    // M�todo para retornar os dados da Sala
+    // Método para retornar os dados da Sala
     public DefaultTableModel listarSalas() {
 
         DefaultTableModel modelo = new DefaultTableModel();
